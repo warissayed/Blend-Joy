@@ -20,7 +20,7 @@ const Data = [
     id: 3,
     Image:
       "https://foodtasia.com/wp-content/uploads/2017/11/pumpkin-spice-white-hot-chocolate-2-683x1024.jpg",
-    Title: " Pumpkin Spice Milkshake",
+    Title: " Pumpkin Milkshake",
     price: "$3.00",
     category: "Milkshake",
   },

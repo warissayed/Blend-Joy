@@ -1,0 +1,29 @@
+.mobileNav {
+  display: none;
+}
+@media (max-width: 849px) {
+  .mobileNav {
+    position: fixed;
+    display: flex;
+    bottom: 0vh;
+    width: 100%;
+    height: 55px;
+    background-color: #4d3531;
+    border-top: 3px solid #fc9047;
+  }
+  .MobileNav_link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0.2;
+    min-width: 25px;
+    overflow: hidden;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+  }
+  .MobileNav_link.MobActive {
+    color: #fc9047;
+  }
+}

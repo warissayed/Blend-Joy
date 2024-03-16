@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../../Style/Navbar/Nav.css";
+import { useSelector } from "react-redux";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { AiOutlineSearch } from "react-icons/ai";
 import { BsFillCartFill } from "react-icons/bs";
@@ -9,12 +10,21 @@ import { IoClose } from "react-icons/io5";
 const Nav = () => {
   const [sidebar, setSidebar] = useState(false);
   const showSidebar = () => setSidebar(!sidebar);
+  const items = useSelector((state) => state.cart);
+  function AddCart() {
+    if (items.length === 0) {
+      return <p>Add</p>;
+    } else {
+      return items.length;
+    }
+  }
+
   return (
     <>
       <div className="Nav">
         <div className="left_nav">
           <div className="navbar_faBars">
-            <FaBarsStaggered size={20} onClick={showSidebar} />
+            <FaBarsStaggered onClick={showSidebar} />
           </div>
           <h1 className="nav_title">Blend&Joy</h1>
           <ul>
@@ -61,7 +71,7 @@ const Nav = () => {
           </ul>
         </div>
         <div className="search_input">
-          <AiOutlineSearch size={20} />
+          <AiOutlineSearch />
           <input
             className="nav_inputBox"
             type="text"
@@ -77,8 +87,8 @@ const Nav = () => {
                 `${isActive ? " isActive Nav_cart" : "Nav_cart"}`
               }
             >
-              <BsFillCartFill size={20} className="cart_icon" />
-              Cart
+              <BsFillCartFill className="cart_icon" />
+              <AddCart />
             </NavLink>
           </button>
         </div>

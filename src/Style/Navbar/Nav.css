@@ -85,7 +85,7 @@
   border-radius: 999px;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  width: auto;
+  width: 30%;
 }
 .nav_inputBox {
   background-color: transparent;
@@ -140,4 +140,72 @@
   padding: 8px 0 8px 15px;
   list-style: none;
   height: 50px;
+}
+
+@media (min-width: 850px) and (max-width: 1050px) {
+  .nav_title {
+    font-size: 1.3rem;
+    line-height: 1.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-style: italic;
+    color: #fc9047;
+  }
+  .nav_li {
+    display: inline-block;
+    margin-inline: 1rem;
+    text-align: center;
+  }
+  .nav_a {
+    color: white;
+    position: relative;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    border-width: 0%;
+    transition: 0.5s ease;
+  }
+  .search_input {
+    background-color: rgba(128, 128, 128, 0.795);
+    display: flex;
+    align-items: center;
+    border-radius: 999px;
+    width: 220px;
+  }
+}
+@media (max-width: 849px) {
+  .nav_li {
+    display: none;
+  }
+  .nav_button {
+    background-color: #fc9047;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 999px;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .search_input {
+    background-color: rgba(128, 128, 128, 0.795);
+    display: flex;
+    align-items: center;
+    border-radius: 999px;
+    width: 40%;
+  }
+}
+@media (max-width: 751px) {
+  .nav_title {
+    font-size: 1rem;
+    line-height: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-style: italic;
+    color: #fc9047;
+  }
+  .nav_li {
+    display: none;
+  }
 }

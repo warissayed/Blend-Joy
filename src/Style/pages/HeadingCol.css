@@ -1,0 +1,72 @@
+.Heading_col {
+  background-color: #141414;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+.Heading_col h1 {
+  background-color: #ff8177;
+  background-image: linear-gradient(
+    to right,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%,
+    #b12a5b 100%
+  );
+  background-size: 100%;
+  margin-bottom: 5rem;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.Heading_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.Heading_card {
+  margin: 1rem;
+  height: 100%;
+  width: 400px;
+  border-radius: 4px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(17, 17, 17, 0.6) 100%
+  );
+
+  color: #fff;
+}
+.Heading_img {
+  height: 525px;
+  width: 100%;
+}
+.Card_heading {
+  background-color: #ff8177;
+  background-image: linear-gradient(
+    to right,
+    #ff8177 0%,
+
+    #b12a5b 100%
+  );
+  background-size: 100%;
+
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.Card_title {
+  background-color: #fc9047;
+  background-image: linear-gradient(to right, #fc9047 0%, #4d3531 100%);
+  background-size: 100%;
+
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}

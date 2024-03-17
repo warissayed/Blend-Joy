@@ -1,9 +1,11 @@
 import React from "react";
 import about from "../../data/about";
 import "../../Style/pages/About.css";
+import HeadingCol from "./HeadingCol";
 const About = () => {
   return (
     <>
+      <HeadingCol />
       <h1 className="about_title">Meet our team</h1>
       <div className="About_gallery">
         {about.map((about) => (

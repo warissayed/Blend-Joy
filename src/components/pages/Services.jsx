@@ -8,7 +8,6 @@ import { FaWifi } from "react-icons/fa";
 import { SiMusicbrainz } from "react-icons/si";
 import { FaGifts } from "react-icons/fa";
 import { MdDeliveryDining } from "react-icons/md";
-import HeadingCol from "./HeadingCol";
 
 const Services = () => {
   return (
@@ -91,7 +90,6 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <HeadingCol />
     </>
   );
 };

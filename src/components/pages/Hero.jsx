@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import "../../Style/pages/Hero.css";
 import Hero_img from "../../img/res-img.png";
 import HeadingCol from "./HeadingCol";
-import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 const Hero = () => {

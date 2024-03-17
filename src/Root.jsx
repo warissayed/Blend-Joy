@@ -12,8 +12,8 @@ const Root = () => {
       <Provider store={store}>
         <Nav />
         <Outlet />
-        <Footer />
         <MobileNav />
+        <Footer />
       </Provider>
     </>
   );

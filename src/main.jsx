@@ -15,6 +15,7 @@ const router = createBrowserRouter([
     element: <Root />,
     errorElement: <div>404 not found</div>,
     children: [
+      { path: "", element: <Hero /> },
       {
         path: "About",
         element: <About />,
@@ -23,7 +24,6 @@ const router = createBrowserRouter([
         path: "Services",
         element: <Services />,
       },
-      { path: "", element: <Hero /> },
       {
         path: "Shakes",
         element: <Shakes />,

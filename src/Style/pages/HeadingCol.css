@@ -70,3 +70,12 @@
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
+.Heading_p {
+  min-height: 125px;
+}
+
+.Heading_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

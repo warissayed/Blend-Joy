@@ -15,29 +15,32 @@ const HeadingCol = () => {
           <h5 className="Card_title">
             Where Every Sip is a Serenade to Serenity
           </h5>
-          <p>
+          <p className="Heading_p">
             Step into a haven of flavors at our Nerul café, where every sip and
             bite is a journey of tranquility. Nestled amidst the bustling
             streets, our café offers a serene retreat for coffee aficionados and
             food enthusiasts alike.{" "}
           </p>
-
-          <NavLink to="Shakes">
-            <button>Order Now</button>
-          </NavLink>
+          <div className="Heading_btn">
+            <NavLink to="Shakes">
+              <button>Order Now</button>
+            </NavLink>
+          </div>
         </div>
         <div className="Heading_card">
           <img src={cafeImg} alt="" className="Heading_img" />
           <h2 className="Card_heading">Vashi's Vibrant Café</h2>
           <h5 className="Card_title">Sip, Savor, Celebrate the Vibrancy</h5>
-          <p>
+          <p className="Heading_p">
             Discover a vibrant culinary hub at our Vashi café, where flavors
             dance and aromas entice. Located in the heart of Vashi, our café
             beckons with its lively ambiance and irresistible menu offerings.
           </p>
-          <NavLink to="Shakes">
-            <button>Order Now</button>
-          </NavLink>
+          <div className="Heading_btn">
+            <NavLink to="Shakes">
+              <button>Order Now</button>
+            </NavLink>
+          </div>
         </div>
       </div>
     </div>
